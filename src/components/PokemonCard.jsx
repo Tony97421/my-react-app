@@ -10,19 +10,18 @@ const pokemonList = [
 ];
 
 
+function PokemonCard ({pokemonBox}) {
+    console.log(pokemonBox)
 
-
-function PokemonCard () {
-
-    const pokemon = pokemonList[0]
+    //const pokemon = pokemonList[0]
 
     return (
         <>
         <figure>
-          {pokemon.imgSrc === undefined ? <p>????</p> : 
-            <img src= {pokemon.imgSrc} alt="pokemon" />}
+          {pokemonBox.imgSrc === undefined ? <p>????</p> : 
+            <img src= {pokemonBox.imgSrc} alt="pokemon" />}
         </figure>
-        <figcaption>{pokemon.name}</figcaption>
+        <figcaption>{pokemonBox.name}</figcaption>
         </>
 );
 
@@ -31,4 +30,3 @@ function PokemonCard () {
 
 
 export default PokemonCard;
-
