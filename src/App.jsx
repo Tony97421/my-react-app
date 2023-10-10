@@ -1,7 +1,7 @@
 import PokemonCard from "./components/PokemonCard";
   
     function App () {
-        const pokemon = pokemonList[0]
+        const pokemon = pokemonList[1]
         return(
 
         <div>
