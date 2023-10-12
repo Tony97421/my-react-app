@@ -4,11 +4,13 @@ import { useState } from "react";
 
 const pokemonList = [
   {
+
     name: "bulbasaur",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
   {
+
     name: "mew",
   },
   {
@@ -17,11 +19,13 @@ const pokemonList = [
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png",
   },
   {
+
     name: "squirtle",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png",
   },
   {
+ 
     name: "pikachu",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png",
@@ -30,12 +34,13 @@ const pokemonList = [
 
 function App() {
   const [pokemonIndex, setpokemonIndex] = useState(0);
+  
 
   const pokemon = pokemonList[pokemonIndex];
 
   return (
     <>
-      <NavBar pokemonIndex={pokemonIndex} setpokemonIndex={setpokemonIndex} pokemonListLength={pokemonList.length}/>
+      <NavBar pokemonIndex={pokemonIndex} setpokemonIndex={setpokemonIndex} pokemonList={pokemonList}/>
       <PokemonCard pokemonBox={pokemon} />
     </>
   );
