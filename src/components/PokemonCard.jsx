@@ -1,19 +1,21 @@
 import PropTypes from "prop-types";
+import "./style.scss";
 
 function PokemonCard({ pokemonBox }) {
   console.log(pokemonBox);
 
   return (
-    <>
+    <div className="namePokemon">
       <figure>
         {pokemonBox.imgSrc === undefined ? (
           <p>????</p>
         ) : (
-          <img src={pokemonBox.imgSrc} alt="pokemon" />
+          <img className="image" src={pokemonBox.imgSrc} alt="pokemon" />
+          
         )}
       </figure>
-      <figcaption>{pokemonBox.name}</figcaption>
-    </>
+      <figcaption>{pokemonBox.name}🤠</figcaption>
+    </div>
   );
 }
 

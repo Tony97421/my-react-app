@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./style.scss"
 
 function NavBar({ setpokemonIndex, pokemonList }) {
   const handleClick = (index, pokemonName) => {
@@ -11,7 +12,7 @@ function NavBar({ setpokemonIndex, pokemonList }) {
   };
   return (
     <>
-      <div>
+      <div className="button">
         {pokemonList.map((pokemon, index) => (
           <button
             key={index}

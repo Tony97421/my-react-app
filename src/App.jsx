@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import { useState } from "react";
 import { useEffect } from "react";
 
+
 const pokemonList = [
   {
     name: "bulbasaur",
